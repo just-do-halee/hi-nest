@@ -1,0 +1,34 @@
+###
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/movies/
+
+###
+DELETE http://localhost:3000/movies/1
+
+###
+PATCH http://localhost:3000/movies/1 HTTP/2.0
+Content-Type: application/json
+
+{
+    "year": 2929
+}
+
+###
+POST http://localhost:3000/movies HTTP/2.0
+Content-Type: application/json
+
+{
+    "title": "tenet2",
+    "year": 2023,
+    "genres": ["sf", "action"]
+}
+
+###
+POST http://localhost:3000/movies HTTP/2.0
+Content-Type: application/json
+
+{
+    "hacked": "by me"
+}
